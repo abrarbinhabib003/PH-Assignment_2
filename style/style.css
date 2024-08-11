@@ -204,6 +204,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+   
 }
 
 .team-member {
@@ -323,14 +324,14 @@ hr{
         color: #fff;
         font-size: 16px;
         cursor: pointer;
-        width: 200px;
+        /* width: 200px; */
     
     }
     
     .btn.download {
         background-color: transparent;
         border: 1px solid #fff;
-        width: 200px;
+        width: 100px;
         border-radius: 20px;
         text-align: center;
     }
@@ -564,9 +565,13 @@ position: relative;
         margin-top: -40px;
         margin-left: 15px;
     }
-    .banner-text,
-    .habits-section  
-
+    
+    
+    
+    
+    
+    
+    
     .footer-container {
         flex-direction: column;
         text-align: center;
@@ -581,82 +586,465 @@ position: relative;
     }
 }
 
-@media (min-width: 577px) and (max-width: 992px) {
-    .nav-links {
-        display: none;
-    }
 
-    .hamburger-menu {
-        display: flex;
-    }
 
-    .banner-section {
-        flex-direction: column;
-        text-align: center;
-    }
 
-    .banner-text {
-        max-width: 100%;
-    }
 
-    .banner-text h1 {
-        font-size: 32px;
-    }
 
-    .banner-text p {
-        font-size: 18px;
-    }
 
-    .banner-buttons .btn {
-        display: block;
-        margin-bottom: 10px;
-    }
 
-    .stats {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .habits-container {
-        flex-direction: column;
-    }
 
-    .habit {
-        flex-basis: 100%;
-    }
 
-    .extra-mile-section {
-        flex-direction: column;
-        text-align: center;
-    }
 
-    .team-container {
-        flex-direction: column;
-        gap: 20px;
-    }
 
-    .team-member {
-        flex-basis: 100%;
-    }
 
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
 
-    .footer-column {
-        margin-bottom: 20px;
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 993px) {
     .hamburger-menu {
         display: none;
     }
-
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #1a1a1a;
+        color: #fff;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 70px;
+        background-color: #1f1e1e;
+       
+    }
+    
+    .logo {
+        font-size: 50px;
+        color: #f15a29;
+        margin-left: 130px;
+        font-weight: bold;
+        font-style: italic;
+    }
+    
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        font-size: 20px ;
+        border: 1px solid #4d4c4c;
+        border-radius: 20px;
+     
+     
+    }
+    
+    .nav-links li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+    
+    .nav-links li a.active {
+        background-color: #f15a29;
+        color: #fff;
+    }
+    
+    .banner-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 40px;
+        background-color: #1f1e1e;
+    
+    }
+    
+    .banner-text {
+        /* max-width: 50%; */
+        margin-top: 50px;
+        margin-left: 150px;
+        width: 600px;
+        height: 600px;
+    }
+    
+    .banner-text h1 {
+        font-size: 80px;
+        line-height: 1.2;
+    }
+    
+    .banner-text h1 .shape {
+        font-family: 'Brush Script MT', cursive;
+        color: #f15a29;
+    }
+    
+    .banner-text p {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+    .banner-image {
+        position: relative;
+        max-width: 50%;
+        margin-right: 100px;
+    }
+    
+    .banner-image img {
+        width: 100%;
+        border-radius: 10px;
+    }
+       
     .nav-links {
         display: flex;
     }
+
+    .habits-section {
+        text-align: center;
+        padding: 50px 20px;
+        background-color: #1a1a1a;
+        color: #fff;
+    }
+    .habit img {
+        
+        
+        border-radius: 50%;
+    }
+        
+    .extra-mile-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 40px;
+        background-color: #333;
+        color: #fff;
+        margin: 50px 50px;
+    }
+    
+    .extra-mile-text {
+        max-width: 70%;
+        
+    }
+    
+    .extra-mile-text h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+    
+    .extra-mile-text p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    
+    .extra-mile-image img {
+      height: 150px;
+      width: 300px;
+       
+        border-radius: 10px;
+        /* margin-left: 100px; */
+    }
+    
+    .btn-extra{
+        padding: 15px 20px;
+        border: none;
+        border-radius: 30px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #f15a29;
+    width: 500px;
+    text-align: center;
+     }
+     .container{
+        text-align: center;
+     }
+     .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 20px;
+        height: 400px;
+        width: 100vw;
+        background-color: #333;
+        /* gap: 100px; */
+       
+        
+        /* margin-left: 20px; */
+        }
+        
+     .bmi-chart, .bmi-calculator {
+        /* width: 45%; */
+        /* width: 1200px; */
+        /* margin-left: 20px; */
+        /* width: 50%; */
+        /* column-gap: 20px; */
+       
+        height: 500px;
+        width: 500px;
+        /* margin-top: 20px; */
+        color: #fff;
+       
+        /* margin-left: 20px; */
+        }
+        form {
+            display: flex;
+           flex-wrap: wrap;
+            margin: 10px 20px;
+            gap: 10px;
+           
+        }  
+        form input, form select, form button {
+            padding: 10px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            background-color: #3f3e3e;
+            color: white;
+            font-weight: 400;
+           row-gap: 30px;
+            /* color: #1f1e1e; */
+            /* display: flex; */
+            /* flex-direction: column; */
+        }
+       
+       
+       
+       
+       
+       
+       
+        form select{
+            width: 220px;
+        }   
+        #last-slct{
+            width: 450px;
+        }
+        .btn-submit{
+            padding: 15px 20px;
+            border: none;
+            border-radius: 30px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #f15a29;
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+        
+        }
+        
+        
+        
+        
+        
+      
+        
+     table {
+        width: 500px;
+        height: 200px;
+        border-collapse: collapse;
+        margin-top: 10px;
+        margin-left: 20px;
+        }
+        
+        th, td {
+        border: 1px solid #555;
+        padding: 10px;
+        text-align: left;
+        color: #fff;
+        }
+        .team-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+        
+       .team-container{
+        margin-left: 100px;
+       
+       }
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+    
+   
+   
+   
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+   
+   
+   
+   
+   
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
     .team-container {
         display: flex;
         flex-wrap: wrap;
