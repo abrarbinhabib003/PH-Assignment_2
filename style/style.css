@@ -503,7 +503,9 @@ position: relative;
         text-align: left;
         color: #fff;
         }
-        
+      #last-slct{
+        max-width: 440px;
+      }  
 
     .team-container {
         flex-direction: column;
